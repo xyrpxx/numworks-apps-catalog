@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NumWorks Informational Directory v1",
+  "type": "object",
+  "required": [
+    "directoryVersion",
+    "checkedAt",
+    "items"
+  ],
+  "properties": {
+    "directoryVersion": {
+      "const": 1
+    },
+    "checkedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "scopeNote": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    }
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "kind",
+        "description",
+        "urls",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]{0,99}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "urls": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "url"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https://"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "status": {
+          "type": "string"
+        },
+        "relatedCatalogIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "catalogNote": {
+          "type": "string"
+        },
+        "licenseNotes": {
+          "type": "string"
+        },
+        "compatibilityNotes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

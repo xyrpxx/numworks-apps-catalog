@@ -1,0 +1,6 @@
+# Local execution plan; do not publish it with the catalog.
+/plan/
+
+# Python
+__pycache__/
+*.py[cod]

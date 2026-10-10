@@ -1,0 +1,255 @@
+{
+  "directoryVersion": 1,
+  "checkedAt": "2026-10-10",
+  "scopeNote": "Annuaire informatif complémentaire. Les entrées ici ne sont pas toutes importables depuis catalog.json. Le flux installable ne contient que les NWA dotés d’un lien amont versionné et d’une empreinte SHA-256 vérifiable.",
+  "items": [
+    {
+      "id": "numplay-project",
+      "name": "NumPlay — jeux et bundle",
+      "kind": "projet-app",
+      "description": "Projet open source regroupant un bundle de jeux, des NWA autonomes et des variantes localisées. La version v1.7.5 fournit 26 NWA Epsilon dans le flux installable; la variante Upsilon est décrite séparément ci-dessous.",
+      "urls": [
+        {
+          "label": "Dépôt",
+          "url": "https://github.com/Mason363/NumPlay"
+        },
+        {
+          "label": "Release v1.7.5",
+          "url": "https://github.com/Mason363/NumPlay/releases/tag/v1.7.5"
+        }
+      ],
+      "status": "partiellement-dans-catalogue",
+      "relatedCatalogIds": [
+        "numplay-2048",
+        "numplay-balatro",
+        "numplay-blockbreaker",
+        "numplay-buckshotroulette",
+        "numplay-celeste",
+        "numplay-championisland",
+        "numplay-connectfour",
+        "numplay-crossyroad",
+        "numplay-flappybird",
+        "numplay-hollowknight",
+        "numplay-minesweeper",
+        "numplay-numblocks",
+        "numplay-numchess",
+        "numplay-numdash",
+        "numplay-numdrive",
+        "numplay-numplay-chinese",
+        "numplay-numplay-french",
+        "numplay-numplay-invisible",
+        "numplay-numplay-matrices",
+        "numplay",
+        "numvisuals",
+        "numplay-pacman",
+        "numplay-portalreturns",
+        "numplay-snake",
+        "numplay-solitaire",
+        "numplay-tetris"
+      ],
+      "licenseNotes": "Le dépôt est GPL-3.0, mais le README précise que les noms, œuvres visuelles et musiques des jeux tiers gardent leurs titulaires et ne sont pas couverts par la licence du dépôt.",
+      "compatibilityNotes": "Le README amont annonce Epsilon 23.2+ sur N0110/N0115/N0120. Pas de vérification matérielle effectuée par ce catalogue."
+    },
+    {
+      "id": "numplay-upsilon",
+      "name": "NumPlay-Upsilon",
+      "kind": "nwa-firmware-specifique",
+      "description": "Variante Upsilon pour N0110/N0115, avec les 13 jeux qui tiennent dans la mémoire applicative annoncée pour Upsilon. Installation via nwlink, pas le flux Epsilon standard.",
+      "urls": [
+        {
+          "label": "NWA v1.7.5",
+          "url": "https://github.com/Mason363/NumPlay/releases/download/v1.7.5/NumPlay-Upsilon.nwa"
+        },
+        {
+          "label": "Instructions amont",
+          "url": "https://github.com/Mason363/NumPlay#on-upsilon"
+        }
+      ],
+      "status": "annuaire-seulement",
+      "version": "1.7.5",
+      "sha256": "74fd5fbdeeca9a5ce4e75a70354f95a000841dd22faafca9dac78fc2db1555b8",
+      "compatibilityNotes": "Upsilon seulement selon le mainteneur; N0110/N0115. Exclu de catalog.json."
+    },
+    {
+      "id": "multi-cheatsheet-project",
+      "name": "Multi-Cheatsheet NumWorks",
+      "kind": "application-et-editeur",
+      "description": "Application de fiches périodiques multi-pages et éditeur web associé. Le fichier gallery.bin doit être produit séparément.",
+      "urls": [
+        {
+          "label": "Dépôt",
+          "url": "https://github.com/xyrpxx/Multi-Cheatsheet-Numworks"
+        },
+        {
+          "label": "Éditeur",
+          "url": "https://xyrpxx.github.io/Multi-Cheatsheet-Numworks/"
+        }
+      ],
+      "status": "dans-catalogue",
+      "relatedCatalogIds": [
+        "multi-cheatsheet"
+      ],
+      "licenseNotes": "Dépôt déclaré GPL-3.0."
+    },
+    {
+      "id": "nwagyu-apps",
+      "name": "Nwagyu — annuaire de NWA communautaires",
+      "kind": "catalogue-amont",
+      "description": "Collection et guides d’applications NumWorks, dont Lua, Peanut-GB/GBC, Periodic, KhiCAS, Nofrendo, Wabbitemu, Playa, PNG Viewer, Mandelbrot, Sierpinski, Numcraft et d’autres. Certaines applications demandent un ROM ou un fichier de données séparé.",
+      "urls": [
+        {
+          "label": "Galerie d’apps",
+          "url": "https://nwagyu-github-io.pages.dev/apps/"
+        },
+        {
+          "label": "Dépôt amont",
+          "url": "https://github.com/Yaya-Cout/Nwagyu"
+        }
+      ],
+      "status": "source-amont-a-parcourir",
+      "sourceRevision": "3cdce976d3ffb06fd0c2a566f3a2c133e67483fb",
+      "catalogNote": "Les NWA ne sont pas importés ici sans SHA-256 vérifiable pour chaque version. NumWorks Manager peut aussi découvrir directement les NWA d’un dépôt GitHub public ajouté comme source."
+    },
+    {
+      "id": "official-python-library",
+      "name": "Bibliothèque Python officielle NumWorks",
+      "kind": "bibliotheque-de-scripts",
+      "description": "Bibliothèque communautaire officielle de scripts Python consultable et importable; elle contient des milliers de scripts selon NumWorks. Ce ne sont pas des NWA.",
+      "urls": [
+        {
+          "label": "Bibliothèque",
+          "url": "https://my.numworks.com/python"
+        },
+        {
+          "label": "Présentation NumWorks",
+          "url": "https://www.numworks.com/calculator/python/"
+        }
+      ],
+      "status": "annuaire-seulement"
+    },
+    {
+      "id": "python-scripts-maskangel",
+      "name": "Numworks-Scripts — maskangel1000",
+      "kind": "collection-python",
+      "description": "Collection personnelle de scripts Python, notamment blackjack, affichage d’images, pong et snake.",
+      "urls": [
+        {
+          "label": "Dépôt",
+          "url": "https://github.com/maskangel1000/Numworks-Scripts"
+        }
+      ],
+      "status": "annuaire-seulement",
+      "licenseNotes": "Le dépôt GitHub affiche une licence MIT; vérifier les licences des éléments ajoutés ultérieurement."
+    },
+    {
+      "id": "python-games-superzooper",
+      "name": "Numworks-Games — SuperZooper3",
+      "kind": "collection-python",
+      "description": "Petits jeux et utilitaires Python NumWorks, avec sources et versions minifiées pour import sur calculatrice.",
+      "urls": [
+        {
+          "label": "Dépôt",
+          "url": "https://github.com/SuperZooper3/Numworks-Games"
+        }
+      ],
+      "status": "annuaire-seulement",
+      "licenseNotes": "Le dépôt GitHub affiche GPL-3.0."
+    },
+    {
+      "id": "numcraft-rust",
+      "name": "Numcraft Rust",
+      "kind": "jeu-et-projet",
+      "description": "Projet de jeu NumWorks inspiré du bac à sable voxel; une NWA est aussi référencée par Nwagyu.",
+      "urls": [
+        {
+          "label": "Dépôt",
+          "url": "https://github.com/yannis300307/NumcraftRust"
+        },
+        {
+          "label": "Guide Nwagyu",
+          "url": "https://nwagyu-github-io.pages.dev/apps/"
+        }
+      ],
+      "status": "annuaire-seulement"
+    },
+    {
+      "id": "celeste-classic-numworks",
+      "name": "Celeste Classic NumWorks",
+      "kind": "jeu-et-projet",
+      "description": "Portage communautaire de Celeste Classic pour calculatrice NumWorks.",
+      "urls": [
+        {
+          "label": "Dépôt",
+          "url": "https://github.com/BenchatonDev/Celeste-Numworks"
+        }
+      ],
+      "status": "annuaire-seulement"
+    },
+    {
+      "id": "tatone26-games",
+      "name": "NumWorks Games — Tatone26",
+      "kind": "collection-de-jeux",
+      "description": "Collection de jeux et applications NumWorks mentionnée par le README de NumPlay.",
+      "urls": [
+        {
+          "label": "Dépôt",
+          "url": "https://github.com/Tatone26/Numworks-games"
+        }
+      ],
+      "status": "annuaire-seulement"
+    },
+    {
+      "id": "yannis-community-list",
+      "name": "Liste communautaire d’applications de yannis300307",
+      "kind": "annuaire-amont",
+      "description": "Liste de projets et d’applications NumWorks tenue sous forme de gist.",
+      "urls": [
+        {
+          "label": "Gist",
+          "url": "https://gist.github.com/yannis300307/9123136f90877107ec0d49ba96b303e5"
+        }
+      ],
+      "status": "annuaire-seulement"
+    },
+    {
+      "id": "numworks-themes",
+      "name": "Thèmes personnalisés Omega/Upsilon",
+      "kind": "collection-de-themes",
+      "description": "Collection de thèmes communautaires pour Omega et Upsilon. L’amont indique qu’il faut compiler le firmware pour installer un thème; ce ne sont pas des NWA Epsilon.",
+      "urls": [
+        {
+          "label": "Dépôt de thèmes",
+          "url": "https://github.com/AngeDieu/Numworks-themes-listing"
+        }
+      ],
+      "status": "annuaire-seulement",
+      "licenseNotes": "Licence du dépôt MIT; les thèmes gardent leurs licences respectives, parfois distinctes."
+    },
+    {
+      "id": "official-apps",
+      "name": "Applications intégrées NumWorks",
+      "kind": "documentation-officielle",
+      "description": "Présentation des applications déjà fournies avec la calculatrice : calcul, fonctions, équations, statistiques, Python, etc. Ce ne sont pas des extensions à ajouter.",
+      "urls": [
+        {
+          "label": "Applications NumWorks",
+          "url": "https://www.numworks.com/calculator/apps/"
+        }
+      ],
+      "status": "reference"
+    },
+    {
+      "id": "official-installer",
+      "name": "Installateur web officiel",
+      "kind": "outil-officiel",
+      "description": "Portail NumWorks pour transférer des applications NWA et des scripts Python vers une calculatrice.",
+      "urls": [
+        {
+          "label": "Portail officiel",
+          "url": "https://my.numworks.com/apps"
+        }
+      ],
+      "status": "reference"
+    }
+  ]
+}
